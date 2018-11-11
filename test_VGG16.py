@@ -21,7 +21,7 @@ model.summary()
 
 preds=model.predict(preprocess_input(x))
 print(preds) #学習済み１０００個のマトリクスで確率出力
-results=decode_predictions(preds,top=10)[0]#上位5個出力
+results=decode_predictions(preds,top=10)[0]#上位個出力
 for result in results:
     print(result)
     
